@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/login_form_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/allies_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/allies"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"/>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/userName_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:theme="@style/LoginEditTextStyle"
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/user_name"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="15sp"
+            android:theme="@style/LoginEditTextStyle"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName_text_input_layout"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:hintTextAppearance="@string/password">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="15sp"
+            android:theme="@style/LoginEditTextStyle"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgetPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_text_input_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/forget_password"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/confirmLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/forgetPasswordTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_shape"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"/>
+
+    <LinearLayout
+        android:id="@+id/createAccountLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmLoginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <!--<TextView-->
+        <!--android:id="@+id/no_account_text_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/have_no_account_yes"-->
+        <!--fontPath="fonts/OpenSans-Light.ttf"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="10sp"/>-->
+
+        <TextView
+            android:id="@+id/no_account_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_no_account_yes"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/createAccountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:paddingBottom="10dp"
+            android:text="@string/create_account"
+            android:textColor="@color/appOrange"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

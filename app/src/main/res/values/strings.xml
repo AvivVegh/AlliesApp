@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AlliesApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="home">HOME</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="its_all_about_living_together">It`s all about living together</string>
+    <string name="login">Login</string>
+    <string name="allies">Allies</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="have_no_account_yes">Have no account yet?</string>
+    <string name="create_account">Create Account</string>
+</resources>
